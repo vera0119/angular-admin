@@ -1,0 +1,81 @@
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// margin utilities
+@mixin m-l($left) {
+  .m-l-#{strip-units($left)} {
+    margin-left: $left;
+  }
+}
+
+@mixin m-r($right) {
+  .m-r-#{strip-units($right)} {
+    margin-right: $right;
+  }
+}
+
+@mixin m-b($bottom) {
+  .m-b-#{strip-units($bottom)} {
+    margin-bottom: $bottom;
+  }
+}
+
+@mixin m-t($top) {
+  .m-t-#{strip-units($top)} {
+    margin-top: $top;
+  }
+}
+
+@mixin m-x($x) {
+  .m-x-#{strip-units($x)} {
+    margin-left: $x;
+    margin-right: $x;
+  }
+}
+
+@mixin m-y($y) {
+  .m-y-#{strip-units($y)} {
+    margin-top: $y;
+    margin-bottom: $y;
+  }
+}
+
+// padding utilities
+@mixin p-l($left) {
+  .p-l-#{strip-units($left)} {
+    padding-left: $left;
+  }
+}
+
+@mixin p-r($right) {
+  .p-r-#{strip-units($right)} {
+    padding-right: $right;
+  }
+}
+
+@mixin p-b($bottom) {
+  .p-b-#{strip-units($bottom)} {
+    padding-bottom: $bottom;
+  }
+}
+
+@mixin p-t($top) {
+  .p-t-#{strip-units($top)} {
+    padding-top: $top;
+  }
+}
+
+@mixin p-x($x) {
+  .p-x-#{strip-units($x)} {
+    padding-left: $x;
+    padding-right: $x;
+  }
+}
+
+@mixin p-y($y) {
+  .p-y-#{strip-units($y)} {
+    padding-top: $y;
+    padding-bottom: $y;
+  }
+}

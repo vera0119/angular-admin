@@ -1,0 +1,177 @@
+@import "~scss/bootstrap/variables";
+
+.logo {
+  background-image: url(~assets/images/logo.svg);
+  display: block;
+  width: 148px;
+  height: 100%;
+  background-size: 100% 38px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  @media (max-width: $screen-xs-max) {
+    width: 36px;
+    background-size: 148px 38px;
+    background-position: 0 50%;
+  }
+}
+
+.account {
+  .avatar {
+    margin-left: 15px;
+    width: 38px;
+  }
+
+  .username,
+  .email {
+    max-width: 100px;
+    word-wrap: break-word;
+  }
+
+  @media (min-width: $screen-xs-max) {
+    .dropdown-toggle {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: $navbar-height;
+    }
+  }
+
+  .dropdown-menu {
+    li > a > i.fa {
+      margin-right: 5px;
+    }
+  }
+
+  .dropdown-toggle .username {
+    float: left;
+    margin-right: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    max-width: 120px;
+    word-wrap: normal;
+
+    @media(max-width: $screen-xs-max) {
+      max-width: 60px;
+    }
+  }
+}
+
+.heartbit {
+  position: relative;
+  float: left;
+}
+
+.heartbit:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: $brand-danger;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.heartbit:after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  width: 0\9;
+  height: 0\9;
+  background: $brand-danger;
+  border-radius: 21px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  animation: heartbit 1.5s infinite ease-out;
+}
+
+@keyframes heartbit {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  // 25% {
+  //   opacity: 0.4;
+  //   transform: scale(0);
+  // }
+
+  // 50% {
+  //   transform: scale(.5);
+  // }
+
+  // 100% {
+  //   opacity: 0;
+  //   transform: scale(1);
+  // }
+}
+
+.dropdown-notifications {
+  width: 280px;
+  padding: 0;
+  border-radius: 0;
+
+  .list-group-item,
+  .panel-heading {
+    border-radius: 0;
+  }
+
+  a .media-body > h5 {
+    overflow: hidden;
+    position: relative;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    max-height: $font-size-base * $line-height-base * 3;
+    padding-right: 25px;
+    text-align: justify;
+
+    &:before {
+      content: "...";
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    }
+
+    &:after {
+      content: "";
+      width: 1em;
+      height: $font-size-base * $line-height-base;
+      position: absolute;
+      right: 10px;
+      background: #fff;
+    }
+  }
+}
+
+.open .dropdown-notifications a {
+  &:hover, &:focus {
+    .media-body > h5 {
+      &:after {
+        background-color: $dropdown-link-hover-bg;
+      }
+    }
+  }
+}
+
+.navbar-default {
+  .navbar-in {
+    color: $navbar-default-toggle-icon-bar-bg;
+  }
+}
+
+.navbar-inverse {
+  .navbar-in {
+    color: $navbar-inverse-toggle-icon-bar-bg;
+  }
+}

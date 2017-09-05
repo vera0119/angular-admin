@@ -1,0 +1,16 @@
+@import "~scss/bootstrap/variables";
+
+.sidebar {
+  width: $sideber-width;
+  float: left;
+  height: 100%;
+}
+
+.sidebar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: inherit;
+}

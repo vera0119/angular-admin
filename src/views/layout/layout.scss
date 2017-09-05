@@ -1,0 +1,17 @@
+@import "~scss/bootstrap/variables";
+
+.navbar.navbar-fixed-top + .main-container {
+  padding-top: $navbar-height;
+}
+
+.main-container {
+  padding: 0;
+  height: 100%;
+}
+
+.page-container {
+  padding: 15px;
+  margin-left: $sideber-width;
+  background-color: #f6f8f8;
+  height: 100%;
+}

@@ -1,0 +1,55 @@
+// margin
+@include m-l(0);
+@include m-l(5px);
+@include m-l(15px);
+@include m-r(0);
+@include m-b(0);
+@include m-t(0);
+@include m-x(0);
+@include m-y(0);
+
+// padding
+@include p-l(0);
+@include p-r(0);
+@include p-b(0);
+@include p-t(0);
+@include p-x(0);
+@include p-y(0);
+
+// font-size
+.text-3x {
+  font-size: 3em;
+}
+
+.text-2x {
+  font-size: 2em;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.text-base {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 13px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-xxs {
+  text-indent: -9999px;
+}
+
+// position
+.pos-rlt {
+  position: relative;
+}

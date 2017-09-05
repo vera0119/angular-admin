@@ -1,0 +1,192 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-in visible-xs" ng-class="{active: navbar}" ng-click="navbar=!navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-user-o text-lg"></i>
+      </button>
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="app.dashboard">
+        <span class="logo"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse" ng-class="{in: navbar}">
+      <ul class="nav navbar-nav navbar-right">
+        <li uib-dropdown>
+          <a href="#" title="Notifications" uib-dropdown-toggle class="clearfix">
+            <span class="heartbit">
+              <i class="fa fa-bell-o"></i>
+            </span>
+            <span class="visible-xs-inline m-l-15">Notifications</span>
+          </a>
+          <div class="panel panel-default dropdown-menu dropdown-menu-right dropdown-notifications">
+            <div class="panel-heading">You have 3 new notifications.</div>
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-info text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-info fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">3 New Followers</h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>4 minutes ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-success text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-check fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">Server Rebooted</h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>15 minutes ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-warning text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-exclamation fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">Your password was recently updated. Please complete your security questions from your profile page. </h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>1 days ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="panel-footer text-center">
+              <a href="#">
+                <span>View all notifications</span><i class="m-l-5 fa fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- <ul class="dropdown-menu dropdown-menu-right dropdown-notifications" uib-dropdown-menu>
+            <li>
+              <a href="#">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-info text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-info fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">3 New Followers</h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>4 minutes ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider hidden-xs"></li>
+            <li>
+              <a href="#">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-success text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-check fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">Server Rebooted</h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>15 minutes ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider hidden-xs"></li>
+            <li>
+              <a href="#">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-warning text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-exclamation fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">Your password was recently updated. Please complete your security questions from your profile page. </h5>
+                    <p class="text-muted text-xs m-y-0">
+                      <span>1 days ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li> -->
+            <!-- <li class="divider hidden-xs"></li>
+            <li>
+              <a href="#">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="fa-stack fa-lg text-danger text-xs">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-times fa-stack-1x"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="m-y-0">
+                      <span>adf
+                      </span>
+                    </h5>
+                    <p class="text-muted text-xs">
+                      <span>4 minutes ago</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li> -->
+            <!-- <li class="divider hidden-xs"></li>
+            <li><a href="#" class="text-center"><span>View all notifications</span><i class="m-l-5 fa fa-angle-right"></i></a></li>
+            <li class="divider visible-xs m-b-0"></li>
+          </ul> -->
+        </li>
+        <li class="account" uib-dropdown>
+          <a class="dropdown-toggle" href="#" uib-dropdown-toggle>
+            <div class="username">admin</div>
+            <i class="fa fa-caret-down"></i>
+            <img src="~assets/images/avatars/a1.png" alt="avatar" class="img-circle avatar hidden-xs">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+            <li>
+              <a href="#"><i class="fa fa-user-o"></i>Your Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-calendar"></i>Calendar</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-question-circle-o"></i>Help</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-sign-out">Sign out</i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
